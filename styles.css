@@ -1,3 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.big {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(4, 0, 51);
+}
+
+.con {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  width: 100%;
+  height: 5em;
+  padding: 0;
+  display: flex;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: rgb(78, 75, 69);
+}
+
+.white {
+  background-color: rgb(178, 237, 211);
+}
+
+.black {
+  background-color: rgb(75, 225, 145);
+}
+
+h1 {
+  color: white;
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .con {
+    height: 20em;
+    width: 20em;
+    margin: 40% 5% 40% 5%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

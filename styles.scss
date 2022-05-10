@@ -1,64 +1,61 @@
 @use "./" as *;
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  @include reset();
 }
 
 .big {
-  // border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, column, center);
   height: 100vh;
-  background-color: rgb(4, 0, 51);
+  background-color: $primary-light;
+
+  h1 {
+    color: $white;
+    display: none;
+  }
 }
 .con {
   width: 25rem;
   height: 25rem;
-  display: flex;
-  // flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex(center, column, center);
+  box-shadow: 8px 13px 27px #4e4e4e;
 }
 
 .row {
   width: 100%;
   height: 5em;
   padding: 0;
-  display: flex;
+  @include flex(false, false, false);
 }
 
 .box {
   width: 100%;
   height: 100%;
   border-radius: 0.22rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 2em;
-  color: rgb(78, 75, 69);
+  color: $primary-dark;
+  @include flex(center, false, center);
 }
+
 .white {
-  background-color: rgb(178, 237, 211);
+  background-color: $secondary-green;
 }
 
 .black {
-  background-color: rgb(75, 225, 145);
+  background-color: $primary-green;
 }
 
-h1 {
-  color: white;
-  display: none;
+.box div {
+  font-size: 1em;
 }
+
 @media only screen and (max-width: 480px) {
   .con {
     height: 20em;
     width: 20em;
-    // margin-left: 5%;
-    // margin-right: 5%;
     margin: 40% 5% 40% 5%;
+  }
+
+  .box div {
+    font-size: 0.79em;
   }
 }

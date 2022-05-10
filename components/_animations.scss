@@ -1,0 +1,70 @@
+.pawn-white.six {
+  position: relative;
+  animation-name: firstMove;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes firstMove {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, -1.5em);
+  }
+}
+
+.pawn-black.five {
+  position: relative;
+  animation-name: secondMove;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes secondMove {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, 1.5em);
+  }
+}
+
+.pawn-white.seven {
+  position: relative;
+  animation-name: thirdMove;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes thirdMove {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, -3.2em);
+  }
+}
+
+.queen-black {
+  position: relative;
+  animation-name: fourthMove;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fourthMove {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(2.09em * 3, 2.09em * 3);
+  }
+}

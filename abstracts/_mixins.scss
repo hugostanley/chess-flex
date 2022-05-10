@@ -1,0 +1,24 @@
+@use "./variables";
+
+@mixin flex(
+  $justify-content: false,
+  $flex-direction: false,
+  $align-items: false
+) {
+  display: flex;
+  @if $justify-content {
+    justify-content: $justify-content;
+  }
+  @if $flex-direction {
+    flex-direction: $flex-direction;
+  }
+  @if $align-items {
+    align-items: $align-items;
+  }
+}
+
+@mixin reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

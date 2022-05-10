@@ -121,14 +121,14 @@
     background-color: #dfaf5e;
   }
 }
-.con {
-  animation: blur;
+.chess-container {
+  animation: background-blur;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 11s;
 }
 
-@keyframes blur {
+@keyframes background-blur {
   from {
     filter: blur(0);
   }
@@ -136,7 +136,7 @@
     filter: blur(5px);
   }
 }
-.last {
+.popUp-message--post {
   animation-name: message;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -157,7 +157,7 @@
   padding: 0;
 }
 
-.big {
+.background {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -165,19 +165,20 @@
   height: 100vh;
   background-color: #c2a887;
 }
-.big .last {
+.background .popUp-message--post {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 5em;
+  text-align: center;
   visibility: hidden;
   position: absolute;
   z-index: 1;
 }
-.big .first {
+.background .first {
   display: none;
 }
 
-.con {
+.chess-container {
   width: 25rem;
   height: 25rem;
   display: flex;

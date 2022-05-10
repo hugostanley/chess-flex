@@ -1,17 +1,19 @@
 @use "./" as *;
+
 * {
   @include reset();
 }
 
-.big {
+.background {
   @include flex(center, column, center);
   height: 100vh;
   background-color: $primary-light;
 
-  .last {
+  .popUp-message--post {
     font-family: "Montserrat", sans-serif;
     color: $white;
     font-size: 5em;
+    text-align: center;
     visibility: hidden;
     position: absolute;
     z-index: 1;
@@ -21,7 +23,7 @@
     display: none;
   }
 }
-.con {
+.chess-container {
   width: 25rem;
   height: 25rem;
   @include flex(center, column, center);

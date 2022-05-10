@@ -137,14 +137,14 @@
   }
 }
 
-.con {
-  animation: blur;
+.chess-container {
+  animation: background-blur;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-delay: 11s;
 }
 
-@keyframes blur {
+@keyframes background-blur {
   from {
     filter: blur(0);
   }
@@ -154,7 +154,7 @@
   }
 }
 
-.last {
+.popUp-message--post {
   animation-name: message;
   animation-duration: 3s;
   animation-fill-mode: forwards;

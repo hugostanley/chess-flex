@@ -8,8 +8,16 @@
   height: 100vh;
   background-color: $primary-light;
 
-  h1 {
+  .last {
+    font-family: "Montserrat", sans-serif;
     color: $white;
+    font-size: 5em;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .first {
     display: none;
   }
 }

@@ -68,3 +68,105 @@
     transform: translate(2.09em * 3, 2.09em * 3);
   }
 }
+
+.h4 {
+  animation-name: h4;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 9s;
+}
+
+@keyframes h4 {
+  from {
+    background-color: #61714d;
+  }
+
+  to {
+    background-color: #dfaf5e;
+  }
+}
+
+.g3 {
+  animation-name: g3;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 9.5s;
+}
+
+@keyframes g3 {
+  from {
+    background-color: #61714d;
+  }
+
+  to {
+    background-color: #dfaf5e;
+  }
+}
+
+.f2 {
+  animation-name: f2;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+@keyframes f2 {
+  from {
+    background-color: #61714d;
+  }
+
+  to {
+    background-color: #dfaf5e;
+  }
+}
+
+.e1 {
+  animation-name: e1;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 10.5s;
+}
+
+@keyframes e1 {
+  from {
+    background-color: #61714d;
+  }
+
+  to {
+    background-color: #dfaf5e;
+  }
+}
+
+.con {
+  animation: blur;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 11s;
+}
+
+@keyframes blur {
+  from {
+    filter: blur(0);
+  }
+
+  to {
+    filter: blur(5px);
+  }
+}
+
+.last {
+  animation-name: message;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 12s;
+}
+
+@keyframes message {
+  from {
+    visibility: hidden;
+  }
+
+  to {
+    visibility: visible;
+  }
+}

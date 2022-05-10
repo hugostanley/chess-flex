@@ -1,4 +1,4 @@
-.pawn-white.six {
+.f2 .pawn-white {
   position: relative;
   animation-name: firstMove;
   animation-duration: 2s;
@@ -15,7 +15,7 @@
   }
 }
 
-.pawn-black.five {
+.e7 .pawn-black {
   position: relative;
   animation-name: secondMove;
   animation-duration: 2s;
@@ -33,7 +33,7 @@
   }
 }
 
-.pawn-white.seven {
+.g2 .pawn-white {
   position: relative;
   animation-name: thirdMove;
   animation-duration: 2s;
@@ -51,7 +51,7 @@
   }
 }
 
-.queen-black {
+.d8 .queen-black {
   position: relative;
   animation-name: fourthMove;
   animation-duration: 3s;

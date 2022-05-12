@@ -10,7 +10,7 @@
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, -1.5em);
+    transform: translate(0, -2em);
   }
 }
 .e7 .pawn-black {
@@ -26,7 +26,7 @@
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, 1.5em);
+    transform: translate(0, 2em);
   }
 }
 .g2 .pawn-white {
@@ -42,7 +42,7 @@
     transform: translate(0, 0);
   }
   to {
-    transform: translate(0, -3.2em);
+    transform: translate(0, -4em);
   }
 }
 .d8 .queen-black {
@@ -58,7 +58,7 @@
     transform: translate(0, 0);
   }
   to {
-    transform: translate(6.27em, 6.27em);
+    transform: translate(7.95em, 7.95em);
   }
 }
 .h4 {
@@ -168,7 +168,7 @@
 .background .popUp-message--post {
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 5em;
+  font-size: 15vmin;
   text-align: center;
   visibility: hidden;
   position: absolute;
@@ -179,8 +179,12 @@
 }
 
 .chess-container {
-  width: 25rem;
-  height: 25rem;
+  width: 80vmin;
+  height: 80vmin;
+  max-width: 80vmin;
+  min-width: 80vmin;
+  max-height: 80vmin;
+  max-width: 80vmin;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -189,24 +193,29 @@
 }
 
 .row {
-  width: 100%;
-  height: 5em;
-  padding: 0;
+  width: 80vmin;
+  height: 80vmin;
+  max-width: 80vmin;
+  min-width: 80vmin;
+  max-height: 80vmin;
+  max-width: 80vmin;
   display: flex;
+  padding: 0;
 }
 
 .box {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.22rem;
-  font-size: 2em;
-  color: #6d152b;
+  width: 10vmin;
+  height: 10vmin;
+  max-width: 10vmin;
+  min-width: 10vmin;
+  max-height: 10vmin;
+  max-width: 10vmin;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.box div {
-  font-size: 1em;
+  border-radius: 0.22rem;
+  font-size: 5vmin;
+  color: #6d152b;
 }
 
 .white {
@@ -215,46 +224,6 @@
 
 .black {
   background-color: #61714d;
-}
-
-@media only screen and (max-width: 480px) {
-  .chess-container {
-    height: 20em;
-    width: 20em;
-    margin: 40% 5% 40% 5%;
-  }
-
-  .box div {
-    font-size: 0.79em;
-  }
-}
-@media only screen and (max-width: 340px) {
-  .chess-container {
-    height: 15em;
-    width: 15em;
-    margin: 40% 5% 40% 5%;
-  }
-
-  .box div {
-    font-size: 0.58em;
-  }
-
-  .d8 .queen-black {
-    position: relative;
-    animation-name: fourthMove;
-    animation-duration: 3s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes fourthMove {
-    from {
-      transform: translate(0, 0);
-    }
-    to {
-      transform: translate(6.48em, 6.48em);
-    }
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

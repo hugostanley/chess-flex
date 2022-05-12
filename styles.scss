@@ -12,7 +12,7 @@
   .popUp-message--post {
     font-family: "Montserrat", sans-serif;
     color: $white;
-    font-size: 5em;
+    font-size: 15vmin;
     text-align: center;
     visibility: hidden;
     position: absolute;
@@ -24,29 +24,23 @@
   }
 }
 .chess-container {
-  width: 25rem;
-  height: 25rem;
+  @include vmin(80vmin);
   @include flex(center, column, center);
   box-shadow: 8px 13px 27px #4e4e4e;
 }
 
 .row {
-  width: 100%;
-  height: 5em;
-  padding: 0;
+  @include vmin(80vmin);
   @include flex(false, false, false);
+  padding: 0;
 }
 
 .box {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.22rem;
-  font-size: 2em;
-  color: $primary-dark;
+  @include vmin(10vmin);
   @include flex(center, false, center);
-  div {
-    font-size: 1em;
-  }
+  border-radius: 0.22rem;
+  font-size: 5vmin;
+  color: $primary-dark;
 }
 
 .white {
@@ -55,12 +49,4 @@
 
 .black {
   background-color: $primary-green;
-}
-
-@media only screen and (max-width: 480px) {
-  @include screen-480;
-}
-
-@media only screen and (max-width: 340px) {
-  @include screen-340;
 }

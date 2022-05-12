@@ -22,3 +22,45 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin screen-480 {
+  .chess-container {
+    height: 20em;
+    width: 20em;
+    margin: 40% 5% 40% 5%;
+  }
+
+  .box div {
+    font-size: 0.79em;
+  }
+}
+
+@mixin screen-340 {
+  .chess-container {
+    height: 15em;
+    width: 15em;
+    margin: 40% 5% 40% 5%;
+  }
+
+  .box div {
+    font-size: 0.58em;
+  }
+
+  .d8 .queen-black {
+    position: relative;
+    animation-name: fourthMove;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fourthMove {
+    from {
+      transform: translate(0, 0);
+    }
+
+    to {
+      transform: translate(2.16em * 3, 2.16em * 3);
+    }
+  }
+}

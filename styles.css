@@ -205,6 +205,9 @@
   justify-content: center;
   align-items: center;
 }
+.box div {
+  font-size: 1em;
+}
 
 .white {
   background-color: #8fae93;
@@ -212,10 +215,6 @@
 
 .black {
   background-color: #61714d;
-}
-
-.box div {
-  font-size: 1em;
 }
 
 @media only screen and (max-width: 480px) {
@@ -238,6 +237,23 @@
 
   .box div {
     font-size: 0.58em;
+  }
+
+  .d8 .queen-black {
+    position: relative;
+    animation-name: fourthMove;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fourthMove {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(6.48em, 6.48em);
+    }
   }
 }
 

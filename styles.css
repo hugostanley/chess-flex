@@ -1,4 +1,4 @@
-.f2 .pawn-white {
+.animationFirst {
   position: relative;
   animation-name: firstMove;
   animation-duration: 2s;
@@ -13,7 +13,7 @@
     transform: translate(0, -2em);
   }
 }
-.e7 .pawn-black {
+.animationSecond {
   position: relative;
   animation-name: secondMove;
   animation-duration: 2s;
@@ -29,7 +29,7 @@
     transform: translate(0, 2em);
   }
 }
-.g2 .pawn-white {
+.animationThird {
   position: relative;
   animation-name: thirdMove;
   animation-duration: 2s;
@@ -45,7 +45,7 @@
     transform: translate(0, -4em);
   }
 }
-.d8 .queen-black {
+.animationFourth {
   position: relative;
   animation-name: fourthMove;
   animation-duration: 3s;
@@ -61,7 +61,7 @@
     transform: translate(7.95em, 7.95em);
   }
 }
-.h4 {
+.animationFifth {
   animation-name: h4;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -76,7 +76,7 @@
     background-color: #dfaf5e;
   }
 }
-.g3 {
+.animationSixth {
   animation-name: g3;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -91,7 +91,7 @@
     background-color: #dfaf5e;
   }
 }
-.f2 {
+.animationSeventh {
   animation-name: f2;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -106,7 +106,7 @@
     background-color: #dfaf5e;
   }
 }
-.e1 {
+.animationEighth {
   animation-name: e1;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -121,11 +121,11 @@
     background-color: #dfaf5e;
   }
 }
-.chess-container {
+.animationNinth {
   animation: background-blur;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 11s;
+  animation-delay: 10s;
 }
 
 @keyframes background-blur {
@@ -136,11 +136,11 @@
     filter: blur(5px);
   }
 }
-.popUp-message--post {
+.animationLast {
   animation-name: message;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 12s;
+  animation-delay: 11s;
 }
 
 @keyframes message {
@@ -174,8 +174,23 @@
   position: absolute;
   z-index: 1;
 }
-.background .first {
-  display: none;
+.background button {
+  background-color: #61714d;
+  /* Green */
+  border: none;
+  border-radius: 2vmin;
+  color: white;
+  padding: 1vmin 2vmin;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  font-size: 2vmin;
+  margin-top: 88vmin;
+  cursor: pointer;
+  z-index: 1;
+}
+.background button:hover {
+  background-color: #8fae93;
 }
 
 .chess-container {
@@ -189,7 +204,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  box-shadow: 8px 13px 27px #4e4e4e;
+  box-shadow: 0vmin 1vmin 4vmin 0.5vmin #4e4e4e;
+  border-radius: 2vmin;
 }
 
 .row {
@@ -213,7 +229,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.22rem;
   font-size: 5vmin;
   color: #6d152b;
 }
@@ -224,6 +239,22 @@
 
 .black {
   background-color: #61714d;
+}
+
+.a1 {
+  border-bottom-left-radius: 2vmin;
+}
+
+.h1 {
+  border-bottom-right-radius: 2vmin;
+}
+
+.a8 {
+  border-top-left-radius: 2vmin;
+}
+
+.h8 {
+  border-top-right-radius: 2vmin;
 }
 
 /*# sourceMappingURL=styles.css.map */

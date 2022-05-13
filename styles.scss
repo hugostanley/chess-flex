@@ -19,14 +19,30 @@
     z-index: 1;
   }
 
-  .first {
-    display: none;
+  button {
+    background-color: $primary-green; /* Green */
+    border: none;
+    border-radius: 2vmin;
+    color: white;
+    padding: 1vmin 2vmin;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    font-size: 2vmin;
+    margin-top: 88vmin;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  button:hover {
+    background-color: $secondary-green;
   }
 }
 .chess-container {
   @include vmin(80vmin);
   @include flex(center, column, center);
-  box-shadow: 8px 13px 27px #4e4e4e;
+  box-shadow: 0vmin 1vmin 4vmin 0.5vmin #4e4e4e;
+  border-radius: 2vmin;
 }
 
 .row {
@@ -38,7 +54,6 @@
 .box {
   @include vmin(10vmin);
   @include flex(center, false, center);
-  border-radius: 0.22rem;
   font-size: 5vmin;
   color: $primary-dark;
 }
@@ -49,4 +64,20 @@
 
 .black {
   background-color: $primary-green;
+}
+
+.a1 {
+  border-bottom-left-radius: 2vmin;
+}
+
+.h1 {
+  border-bottom-right-radius: 2vmin;
+}
+
+.a8 {
+  border-top-left-radius: 2vmin;
+}
+
+.h8 {
+  border-top-right-radius: 2vmin;
 }
